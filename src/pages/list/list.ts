@@ -17,11 +17,11 @@ export class ListPage {
     'american-football', 'boat', 'bluetooth', 'build'];
 
     this.items = [];
-    for(let i = 1; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
+        title: 'Item ' + (i+1),
+        note: 'This is item #' + (i+1),
+        icon: this.icons[i]
       });
     }
   }

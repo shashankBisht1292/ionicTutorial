@@ -13,6 +13,6 @@
     <ion-icon [name]="selectedItem.icon"></ion-icon>
   </h3>
   <h4 text-center *ngIf="selectedItem">
-    You navigated here from <b>{{selectedItem.title}}</b>
+    You navigated here from <b>{{selectedItem.title}}</b> : {{selectedItem.note}} : <ion-icon name="{{selectedItem.icon}}" item-left></ion-icon>
   </h4>
 </ion-content>
